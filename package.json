@@ -1,0 +1,33 @@
+{
+  "name": "ht-s-2022-placeholder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HtS 2022 Placeholder",
+  "author": "matteomiceli",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "gatsby": "^4.6.2",
+    "gatsby-plugin-postcss": "^5.6.0",
+    "postcss": "^8.4.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^3.0.18"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
+}
