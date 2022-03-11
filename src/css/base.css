@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+.height-min-nav {
+    height: calc(80vh - 64px);
+    min-height: 500px;
 }

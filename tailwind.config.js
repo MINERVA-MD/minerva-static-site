@@ -3,7 +3,9 @@ module.exports = {
     theme: {
         fontFamily: {},
         extend: {
-            colors: {},
+            colors: {
+                'minerva-purple': '#5452C1',
+            },
         },
     },
     variants: {
