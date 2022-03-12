@@ -21,7 +21,7 @@ export default function Download() {
                     />
                     <DlButton
                         buttonText="macOS(arm)"
-                        url="https://github.com/MINERVA-MD/minerva/releases/download/v0.1_mac_x64/electron-vue-ts-starter_1.0.0.dmg"
+                        url="https://github.com/MINERVA-MD/minerva/releases/download/v0.1_mac_arm/electron-vue-ts-starter_1.0.0.dmg"
                     />
                 </div>
                 <img
