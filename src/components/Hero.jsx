@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'gatsby';
 
 export default function Hero() {
@@ -28,42 +28,42 @@ export default function Hero() {
             }
         }
     }
+
+    const bgEl = useRef(null);
+
     useEffect(() => {
         checkOS();
     }, []);
 
     return (
-        <div className="bg-minerva-purple flex flex-col justify-center items-center h-screen height-min-nav w-screen top-0">
-            <h1 className="text-white text-5xl sm:text-7xl font-bold pb-12 text-center px-4">
-                Minerva Markdown
+        <div
+            className="flex flex-col items-center justify-center bg-minerva-purple overflow-hidden height-min-nav"
+            ref={bgEl}
+        >
+            <h1 className="pt-24 px-2 text-white text-7xl font-bold text-center">
+                Markdown for Professionals.
             </h1>
-            {}
-            {os !== null ? (
-                <div>
-                    <Link to={os.url}>
-                        <button
-                            type="button"
-                            className="bg-white text-minerva-purple text-lg font-semibold px-6 py-3 shadow-md hover:bg-gray-100 rounded"
-                        >
-                            Download for{' '}
-                            <span className="text-minerva-purple">{os.os}</span>
-                        </button>
-                    </Link>
-                    <p className="text-white italic pt-2 text-center">
-                        See all{' '}
-                        <Link to="/download" className="underline">
-                            downloads
-                        </Link>
-                    </p>
-                </div>
-            ) : (
-                <p className="text-white italic">
-                    We couldn't detect your operating system. See all{' '}
-                    <Link className="underline" to="/download">
-                        downloads
+            <div className="flex flex-col mt-12">
+                <Link to={os?.url}>
+                    <button
+                        type="button"
+                        className="bg-white text-minerva-purple text-lg font-semibold px-6 py-3 shadow-md hover:opacity-80 rounded"
+                    >
+                        Download for{' '}
+                        <span className="text-minerva-purple">{os?.os}</span>
+                    </button>
+                </Link>
+                <p className="text-white italic pt-2 text-center text-sm">
+                    <Link to="/download" className="hover:underline">
+                        See all downloads
                     </Link>
                 </p>
-            )}
+            </div>
+            <img
+                className="pt-6 w-11/12 sm:w-5/6 max-w-5xl translate-y-12"
+                src="/images/minerva_prototype.png"
+                alt="minerva prototype"
+            />
         </div>
     );
 }

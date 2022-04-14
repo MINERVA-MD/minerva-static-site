@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
 
-function IndexPage() {
+export default function IndexPage() {
     return (
         <div>
             <Navbar />
@@ -10,5 +10,3 @@ function IndexPage() {
         </div>
     );
 }
-
-export default IndexPage;

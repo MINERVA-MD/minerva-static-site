@@ -3,15 +3,16 @@ import { Link } from 'gatsby';
 
 export default function Navbar() {
     return (
-        <div className="shadow-md h-16 flex items-center px-8 justify-between">
+        <div className="shadow-md h-16 flex items-center px-8 justify-between bg-minerva-purple">
             <Link to="/">
-                <img src="/images/logo.svg" alt="" className="w-28 pb-2" />
+                <img
+                    src="/images/minerva_logo.png"
+                    alt="logo"
+                    className="w-28 mt-2"
+                />
             </Link>
-            <Link
-                to="/download"
-                className="hover:underline hover:text-minerva-purple"
-            >
-                Download
+            <Link to="/download" className="text-white hover:underline">
+                Downloads
             </Link>
         </div>
     );
