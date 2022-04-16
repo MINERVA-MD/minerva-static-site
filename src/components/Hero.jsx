@@ -37,17 +37,17 @@ export default function Hero() {
 
     return (
         <div
-            className="flex flex-col items-center justify-center bg-minerva-purple overflow-hidden height-min-nav"
+            className="flex flex-col items-center bg-minerva-purple overflow-hidden height-min-nav"
             ref={bgEl}
         >
-            <h1 className="pt-24 px-2 text-white text-7xl font-bold text-center">
+            <h1 className="pt-24 px-2 text-white text-5xl sm:text-7xl font-bold text-center">
                 Markdown for Professionals.
             </h1>
-            <div className="flex flex-col mt-12">
+            <div className="flex flex-col">
                 <Link to={os?.url}>
                     <button
                         type="button"
-                        className="bg-white text-minerva-purple text-lg font-semibold px-6 py-3 shadow-md hover:opacity-80 rounded"
+                        className="bg-white text-minerva-purple text-lg font-semibold px-6 py-3 shadow-md hover:opacity-80 rounded mt-12"
                     >
                         Download for{' '}
                         <span className="text-minerva-purple">{os?.os}</span>
@@ -59,11 +59,13 @@ export default function Hero() {
                     </Link>
                 </p>
             </div>
-            <img
-                className="pt-6 w-11/12 sm:w-5/6 max-w-5xl translate-y-12"
-                src="/images/minerva_prototype.png"
-                alt="minerva prototype"
-            />
+            <div className="bg-minerva-purple h-full flex items-end">
+                <img
+                    className="bg-minerva-purple mx-auto pt-6 w-full sm:w-5/6 max-w-6xl"
+                    src="/images/minerva_prototype.png"
+                    alt="minerva prototype"
+                />
+            </div>
         </div>
     );
 }
