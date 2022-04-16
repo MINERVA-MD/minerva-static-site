@@ -10,15 +10,15 @@ export default function AllDownloads() {
             <div className="mx-auto pt-12 px-2 flex flex-wrap justify-center">
                 <DlButton
                     buttonText="Windows"
-                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.1_win_x64/electron-vue-ts-starter_1.0.0.exe"
+                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_win_x64/minerva_0.0.12.exe"
                 />
                 <DlButton
                     buttonText="macOS(intel)"
-                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.1_mac_x64/electron-vue-ts-starter_1.0.0.dmg"
+                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_mac_intel/minerva_0.0.12.dmg"
                 />
                 <DlButton
                     buttonText="macOS(arm)"
-                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.1_mac_arm/electron-vue-ts-starter_1.0.0.dmg"
+                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_mac_arm/minerva_0.0.12.dmg"
                 />
                 {/* <DlButton buttonText="Linux(snap)" url="//" /> */}
             </div>

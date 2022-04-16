@@ -13,18 +13,18 @@ export default function Hero() {
             if (browserReportedOS.includes('mac')) {
                 setOs({
                     os: 'Mac',
-                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1_mac_x64/electron-vue-ts-starter_1.0.0.dmg',
+                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_mac_intel/minerva_0.0.12.dmg',
                 });
             } else if (browserReportedOS.includes('win')) {
                 setOs({
                     os: 'Windows',
-                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1_win_x64/electron-vue-ts-starter_1.0.0.exe',
+                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_win_x64/minerva_0.0.12.exe',
                 });
-            } else if (browserReportedOS.includes('linux')) {
-                setOs({
-                    os: 'Linux',
-                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1_win_x64/electron-vue-ts-starter_1.0.0.exe',
-                });
+                // } else if (browserReportedOS.includes('linux')) {
+                //     setOs({
+                //         os: 'Linux',
+                //         url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1_win_x64/electron-vue-ts-starter_1.0.0.exe',
+                //     });
             }
         }
     }
