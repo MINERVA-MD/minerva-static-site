@@ -25,6 +25,8 @@ export default function Hero() {
                     os: 'Linux',
                     url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1_win_x64/electron-vue-ts-starter_1.0.0.exe',
                 });
+            } else {
+                // setOs({ os: 'hi', url: '' });
             }
         }
     }
@@ -40,19 +42,28 @@ export default function Hero() {
             className="flex flex-col items-center bg-minerva-purple overflow-hidden height-min-nav"
             ref={bgEl}
         >
-            <h1 className="pt-24 px-2 text-white text-5xl sm:text-7xl font-bold text-center">
+            <h1 className="pt-24 px-4 text-white text-5xl sm:text-7xl font-bold text-center">
                 Markdown for Professionals.
             </h1>
             <div className="flex flex-col">
-                <Link to={os?.url}>
-                    <button
-                        type="button"
-                        className="bg-white text-minerva-purple text-lg font-semibold px-6 py-3 shadow-md hover:opacity-80 rounded mt-12"
-                    >
-                        Download for{' '}
-                        <span className="text-minerva-purple">{os?.os}</span>
-                    </button>
-                </Link>
+                {os ? (
+                    <Link to={os?.url}>
+                        <button
+                            type="button"
+                            className="bg-white text-minerva-purple text-lg font-semibold px-6 py-3 shadow-md hover:opacity-80 rounded mt-12"
+                        >
+                            Download for{' '}
+                            <span className="text-minerva-purple">
+                                {os?.os}
+                            </span>
+                        </button>
+                    </Link>
+                ) : (
+                    <p className="px-6 pt-12 text-white">
+                        Operating system could not be detected
+                    </p>
+                )}
+
                 <p className="text-white italic pt-2 text-center text-sm">
                     <Link to="/download" className="hover:underline">
                         See all downloads
