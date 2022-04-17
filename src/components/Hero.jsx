@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'gatsby';
+import downloadUrls from '../Content/downloadUrls';
 
 export default function Hero() {
     const [os, setOs] = useState(null);
@@ -13,12 +14,12 @@ export default function Hero() {
             if (browserReportedOS.includes('mac')) {
                 setOs({
                     os: 'Mac',
-                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_mac_intel/minerva_0.0.12.dmg',
+                    url: downloadUrls.macIntel,
                 });
             } else if (browserReportedOS.includes('win')) {
                 setOs({
                     os: 'Windows',
-                    url: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_win_x64/minerva_0.0.12.exe',
+                    url: downloadUrls.win,
                 });
                 // } else if (browserReportedOS.includes('linux')) {
                 //     setOs({

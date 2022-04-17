@@ -1,4 +1,5 @@
 import React from 'react';
+import downloadUrls from '../Content/downloadUrls';
 import DlButton from './DlButton';
 
 export default function AllDownloads() {
@@ -8,17 +9,14 @@ export default function AllDownloads() {
                 Alternative Downloads
             </h1>
             <div className="mx-auto pt-12 px-2 flex flex-wrap justify-center">
-                <DlButton
-                    buttonText="Windows"
-                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_win_x64/minerva_0.0.12.exe"
-                />
+                <DlButton buttonText="Windows" url={`${downloadUrls.win}`} />
                 <DlButton
                     buttonText="macOS(intel)"
-                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_mac_intel/minerva_0.0.12.dmg"
+                    url={`${downloadUrls.macIntel}`}
                 />
                 <DlButton
                     buttonText="macOS(arm)"
-                    url="https://github.com/MINERVA-MD/minerva/releases/download/v0.0.12_mac_arm/minerva_0.0.12.dmg"
+                    url={`${downloadUrls.macArm}`}
                 />
                 {/* <DlButton buttonText="Linux(snap)" url="//" /> */}
             </div>
