@@ -5,7 +5,7 @@ import DlButton from './DlButton';
 export default function AllDownloads() {
     return (
         <div className="flex flex-col items-center bg-minerva-purple overflow-hidden height-min-nav">
-            <h1 className="px-2 text-white text-5xl text-center mt-48">
+            <h1 className="px-2 text-white text-4xl sm:text-6xl font-semibold text-center mt-48">
                 Alternative Downloads
             </h1>
             <div className="mx-auto pt-12 px-2 flex flex-wrap justify-center">

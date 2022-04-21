@@ -41,7 +41,7 @@ export default function Hero() {
             className="flex flex-col items-center bg-minerva-purple overflow-hidden height-min-nav"
             ref={bgEl}
         >
-            <h1 className="pt-24 px-4 text-white text-5xl sm:text-7xl font-bold text-center">
+            <h1 className="pt-36 px-4 text-white text-5xl sm:text-[6rem] font-bold text-center">
                 Markdown for Professionals.
             </h1>
             <div className="flex flex-col">
@@ -58,12 +58,12 @@ export default function Hero() {
                         </button>
                     </Link>
                 ) : (
-                    <p className="px-6 pt-12 text-white">
+                    <p className="px-6 pt-12 text-white text-xl">
                         Operating system could not be detected
                     </p>
                 )}
 
-                <p className="text-white italic pt-2 text-center text-sm">
+                <p className="text-white italic pt-2 text-center">
                     <Link to="/download" className="hover:underline">
                         See all downloads
                     </Link>
@@ -71,8 +71,8 @@ export default function Hero() {
             </div>
             <div className="bg-minerva-purple h-full flex items-end">
                 <img
-                    className="bg-minerva-purple mx-auto pt-6 w-full sm:w-5/6 max-w-6xl"
-                    src="/images/minerva_prototype.png"
+                    className="bg-minerva-purple mx-auto pt-6 w-full sm:w-5/6 max-w-7xl"
+                    src="/images/minerva_screenshot.png"
                     alt="minerva prototype"
                 />
             </div>
