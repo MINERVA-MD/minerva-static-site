@@ -1,8 +1,8 @@
 const downloadUrls = {
-    win: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.13/Minerva_0.0.13.exe',
+    win: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1.0/Minerva_0.1.0-x64-win.exe',
     macIntel:
-        'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.13/Minerva_0.0.13.dmg',
-    macArm: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.0.13/Minerva_0.0.13_arm.dmg',
+        'https://github.com/MINERVA-MD/minerva/releases/download/v0.1.0/Minerva_0.1.0-x64.dmg',
+    macArm: 'https://github.com/MINERVA-MD/minerva/releases/download/v0.1.0/Minerva_0.1.0-arm64.dmg',
 };
 
 export default downloadUrls;
